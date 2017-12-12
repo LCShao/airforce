@@ -94,7 +94,6 @@ function paintRUNNING(){
   stepEnemies();
   delEnemies();
   hitEnemies();
-  paintBullets();
   paintText()
 }
 
@@ -117,7 +116,7 @@ function paint(){
       break;
     case PAUSE:
       hero.paint();
-      bulletsPaint();
+      paintBullets();
       paintEnemies();
       paintText();
       cv.drawImage(pause,10,10);

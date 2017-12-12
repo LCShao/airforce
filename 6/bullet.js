@@ -46,7 +46,7 @@ function bulletsStep(){
 function bulletsDel(){
   for(var i=0;i<bullets.length;i++){
     // 判断子弹的y值 < -子弹高度
-    if(bullets[i].y < -bullets[i].height || bullets[i].candel){
+    if(bullets[i].y < -bullets[i].height || bullets[i].canDelete){
       bullets.splice(i,1);
     }
   }

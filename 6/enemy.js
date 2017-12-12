@@ -77,6 +77,7 @@ class Enemy{
 	// 新增方法bang() - 用于被撞击后的逻辑
 	bang(){
 		this.life--;//敌机生命值-1
+		console.log(this.life);
 		if(this.life == 0){ //如果生命值为0，则标记为可删除
 			this.canDelete = true;
 			score += this.score; //并将得分加入总分
