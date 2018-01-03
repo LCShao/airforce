@@ -159,6 +159,7 @@ cv.onmousemove = e=>{
   }
 }
 cv.addEventListener("touchmove",e=>{
+  e.preventDefault();
   if(state == RUNNING){
     var x = e.touches[0].clientX;
     var y = e.touches[0].clientY;
